@@ -38,12 +38,12 @@ export default function ContactForm() {
   return (
     <section
       id="contact"
-      className="py-20 bg-gradient-to-br from-red-50 to-red-100 relative overflow-hidden">
+      className="py-20 bg-gradient-to-br from-red-50 to-red-100 relative overflow-hidden font-inter">
       <div className="absolute inset-0 bg-gradient-to-r from-[#922e2e]/10 to-red-600/10"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold text-gray-900 mb-6 font-poppins">
             Let's Work Together
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -57,7 +57,7 @@ export default function ContactForm() {
           {/* Left Section */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">
                 Contact Information
               </h3>
               <div className="space-y-6">
@@ -67,9 +67,8 @@ export default function ContactForm() {
                     <i className="ri-mail-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">hello@codecelix.com</p>
-                    <p className="text-gray-600">support@codecelix.com</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Email</h4>
+                    <p className="text-gray-600">Infocofecelix@gmail.com</p>
                   </div>
                 </div>
 
@@ -79,9 +78,8 @@ export default function ContactForm() {
                     <i className="ri-phone-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-gray-600">+1 (555) 987-6543</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Phone</h4>
+                    <p className="text-gray-600">+39 (350) 854-0334 </p>
                   </div>
                 </div>
 
@@ -91,9 +89,9 @@ export default function ContactForm() {
                     <i className="ri-map-pin-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Office</h4>
-                    <p className="text-gray-600">123 Tech Street, Suite 100</p>
-                    <p className="text-gray-600">San Francisco, CA 94105</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Office</h4>
+                    <p className="text-gray-600"> Centro Direzionale, is. A2, scala B, 80143
+                      Napoli NA, Italy </p>
                   </div>
                 </div>
               </div>
@@ -101,27 +99,22 @@ export default function ContactForm() {
 
             {/* Social Links */}
             <div>
-              <h4 className="font-semibold text-gray-900 mb-4">Follow Us</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 font-poppins">Follow Us</h4>
               <div className="flex space-x-4">
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/codecelix/"
                   className="w-12 h-12 bg-[#922e2e] rounded-lg flex items-center justify-center hover:bg-[#7a2525] transition-colors">
                   <i className="ri-linkedin-fill text-white"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/codecelix?igsh=MTVlNjdveWphbjFxYQ=="
                   className="w-12 h-12 bg-[#922e2e] rounded-lg flex items-center justify-center hover:bg-[#7a2525] transition-colors">
-                  <i className="ri-twitter-fill text-white"></i>
+                  <i className="ri-instagram-fill text-white"></i>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.facebook.com/share/14FPASnYKkj/?mibextid=wwXIfr"
                   className="w-12 h-12 bg-[#922e2e] rounded-lg flex items-center justify-center hover:bg-[#7a2525] transition-colors">
                   <i className="ri-facebook-fill text-white"></i>
-                </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-[#922e2e] rounded-lg flex items-center justify-center hover:bg-[#7a2525] transition-colors">
-                  <i className="ri-github-fill text-white"></i>
                 </a>
               </div>
             </div>
@@ -129,7 +122,7 @@ export default function ContactForm() {
 
           {/* Right Section: Contact Form */}
           <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">
+            <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">
               Send us a Message
             </h3>
 
@@ -195,7 +188,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-[#922e2e] text-white py-3 px-6 rounded-lg hover:bg-[#7a2525] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed">
+                className="w-full font-dmSans bg-[#922e2e] text-white py-3 px-6 rounded-lg hover:bg-[#7a2525] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed">
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
 
