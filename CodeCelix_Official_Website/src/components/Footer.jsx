@@ -21,7 +21,7 @@ const Footer = ({ logo }) => {
                             <a href="https://www.instagram.com/codecelix?igsh=MTVlNjdveWphbjFxYQ==" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#922e2e] transition-colors cursor-pointer">
                                 <i className="ri-instagram-fill w-5 h-5 flex items-center justify-center"></i>
                             </a>
-                            <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#922e2e] transition-colors cursor-pointer">
+                            <a href="https://www.facebook.com/share/14FPASnYKkj/?mibextid=wwXIfr" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#922e2e] transition-colors cursor-pointer">
                                 <i className="ri-facebook-fill w-5 h-5 flex items-center justify-center"></i>
                             </a>
                         </div>
