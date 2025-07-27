@@ -1,8 +1,8 @@
-// import { Link } from 'react-router-dom';  // If using React Router (optional)
+import { Link } from 'react-router-dom';
 
 export default function Header({ logo }) {
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
@@ -10,11 +10,11 @@ export default function Header({ logo }) {
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Home
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
@@ -42,7 +42,7 @@ export default function Header({ logo }) {
             </a>
           </nav>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 font-dmSans">
             <button className="bg-[#922e2e] text-white px-6 py-2 rounded-full hover:bg-[#7a2525] transition-colors font-medium whitespace-nowrap cursor-pointer">
               Get Started
             </button>
