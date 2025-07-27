@@ -1,7 +1,8 @@
 import AboutSection from './AboutSection.jsx';
-import ContactForm from './ContactForm.jsx';
+import ContactFormSection from './ContactFormSection.jsx';
 import HeroSection from './HeroSection.jsx';
 import Services from './Services.jsx';
+import TeamSection from './TeamSection.jsx';
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <Services />
-      <ContactForm />
+      <TeamSection />
+      <ContactFormSection />
     </>
   );
 }

@@ -1,4 +1,4 @@
-// import { Link } from 'react-router-dom';  // If using React Router (optional)
+import { Link } from 'react-router-dom';
 
 export default function Header({ logo }) {
   return (
@@ -10,11 +10,11 @@ export default function Header({ logo }) {
           </div>
 
           <nav className="hidden md:flex space-x-8">
-            <a
-              href="#home"
+            <Link
+              to="/"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Home
-            </a>
+            </Link>
             <a
               href="#about"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">

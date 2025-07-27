@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { motion } from 'framer-motion';
+import { sendContactEmail } from '../services/emailService.js';
 
-export default function ContactForm() {
+export default function ContactFormSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,19 +22,37 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsSubmitting(true);
     setSubmitStatus(null);
 
-    try {
-      await new Promise((resolve) => setTimeout(resolve, 1000));
+    if (
+      !formData.name.trim() ||
+      !formData.email.trim() ||
+      !formData.message.trim()
+    ) {
+      setSubmitStatus('all-fields-required');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(formData.email.trim())) {
+      setSubmitStatus('invalid-email');
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    const result = await sendContactEmail(formData);
+
+    if (result.success) {
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-    } catch (error) {
-      console.log(error);
+    } else {
       setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
+      console.error(result.error);
     }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -42,7 +62,12 @@ export default function ContactForm() {
       <div className="absolute inset-0 bg-gradient-to-r from-[#922e2e]/10 to-red-600/10"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}>
           <h2 className="text-4xl font-bold text-gray-900 mb-6 font-poppins">
             Let's Work Together
           </h2>
@@ -51,11 +76,17 @@ export default function ContactForm() {
             solutions? Get in touch with us today and let's discuss how we can
             help you achieve your goals.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left Section */}
-          <div className="space-y-8">
+          <motion.div
+            className="space-y-8"
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}>
+            {/* Contact Information */}
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">
                 Contact Information
@@ -67,8 +98,11 @@ export default function ContactForm() {
                     <i className="ri-mail-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Email</h4>
-                    <p className="text-gray-600">Infocofecelix@gmail.com</p>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">
+                      Email
+                    </h4>
+                    <p className="text-gray-600">Infocodecelix@gmail.com</p>
+                    <p className="text-gray-600">foundercodecelix@gmail.com</p>
                   </div>
                 </div>
 
@@ -78,7 +112,9 @@ export default function ContactForm() {
                     <i className="ri-phone-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Phone</h4>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">
+                      Phone
+                    </h4>
                     <p className="text-gray-600">+39 (350) 854-0334 </p>
                   </div>
                 </div>
@@ -89,9 +125,14 @@ export default function ContactForm() {
                     <i className="ri-map-pin-line text-[#922e2e] text-xl"></i>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">Office</h4>
-                    <p className="text-gray-600"> Centro Direzionale, is. A2, scala B, 80143
-                      Napoli NA, Italy </p>
+                    <h4 className="font-semibold text-gray-900 mb-1 font-poppins">
+                      Office
+                    </h4>
+                    <p className="text-gray-600">
+                      {' '}
+                      Centro Direzionale, is. A2, <br /> scala B, 80143 Napoli
+                      NA, Italy{' '}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -99,7 +140,9 @@ export default function ContactForm() {
 
             {/* Social Links */}
             <div>
-              <h4 className="font-semibold text-gray-900 mb-4 font-poppins">Follow Us</h4>
+              <h4 className="font-semibold text-gray-900 mb-4 font-poppins">
+                Follow Us
+              </h4>
               <div className="flex space-x-4">
                 <a
                   href="https://www.linkedin.com/company/codecelix/"
@@ -118,10 +161,15 @@ export default function ContactForm() {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Section: Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
+          <motion.div
+            className="bg-white rounded-2xl p-8 shadow-lg"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}>
             <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">
               Send us a Message
             </h3>
@@ -203,8 +251,20 @@ export default function ContactForm() {
                   Something went wrong. Please try again.
                 </div>
               )}
+
+              {submitStatus === 'all-fields-required' && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
+                  Required fields must not be empty.
+                </div>
+              )}
+
+              {submitStatus === 'invalid-email' && (
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4 text-red-700">
+                  Please enter a valid email address.
+                </div>
+              )}
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
