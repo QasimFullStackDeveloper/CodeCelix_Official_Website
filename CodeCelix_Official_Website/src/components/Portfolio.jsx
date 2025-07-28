@@ -1,35 +1,37 @@
+import { Link } from 'react-router-dom';
+import EcommerecePlatformImg from '/Portfolio_Page/ProjectImage/ECommercePlatform.jpg';
+import HealthcareDashboardImg from '/Portfolio_Page/ProjectImage/HealthCareUI_UX.jpg';
+import FinancialMobileAppImg from '/Portfolio_Page/ProjectImage/Financial_Mobile_App.jpg';
+import CorporateWebsiteRedesignImg from '/Portfolio_Page/ProjectImage/Corporate_Website_Redesign.jpg';
+
 const portfolioData = [
   {
     title: 'E-Commerce Platform',
     category: 'Web Development',
     description:
       'A comprehensive e-commerce solution with advanced analytics, inventory management, and seamless payment integration.',
-    image:
-      'https://readdy.ai/api/search-image?query=Modern%20e-commerce%20platform%20interface%20with%20product%20listings%2C%20shopping%20cart%2C%20and%20payment%20processing.%20Clean%20design%20with%20red%20and%20white%20color%20scheme%2C%20professional%20layout%20with%20product%20images%20and%20user-friendly%20navigation.%20Dashboard%20showing%20sales%20analytics%20and%20inventory%20management.&width=600&height=400&seq=portfolio-red-1&orientation=landscape',
+    image: EcommerecePlatformImg,
   },
   {
     title: 'Healthcare Mobile App',
     category: 'Mobile Development',
     description:
       'A patient management system with appointment scheduling, medical records, and telemedicine capabilities.',
-    image:
-      'https://readdy.ai/api/search-image?query=Healthcare%20mobile%20application%20interface%20showing%20patient%20dashboard%2C%20appointment%20scheduling%2C%20and%20medical%20records.%20Clean%20medical%20app%20design%20with%20red%20and%20green%20accents%2C%20professional%20healthcare%20interface%20with%20charts%20and%20patient%20data%20visualization.&width=600&height=400&seq=portfolio-red-2&orientation=landscape',
+    image: HealthcareDashboardImg,
   },
   {
     title: 'Financial Dashboard',
     category: 'Data Analytics',
     description:
       'Real-time financial analytics platform with advanced reporting, data visualization, and risk management tools.',
-    image:
-      'https://readdy.ai/api/search-image?query=Financial%20analytics%20dashboard%20with%20charts%2C%20graphs%2C%20and%20data%20visualization.%20Professional%20fintech%20interface%20with%20red%20and%20burgundy%20color%20scheme%2C%20showing%20stock%20market%20data%2C%20financial%20reports%2C%20and%20interactive%20charts.%20Clean%20and%20modern%20design%20with%20numerical%20data%20displays.&width=600&height=400&seq=portfolio-red-3&orientation=landscape',
+    image: FinancialMobileAppImg,
   },
   {
-    title: 'Cloud Infrastructure',
-    category: 'Cloud Solutions',
+    title: 'Corporate Website Redesign',
+    category: 'Web Development',
     description:
-      'Scalable cloud architecture implementation with automated deployment, monitoring, and disaster recovery.',
-    image:
-      'https://readdy.ai/api/search-image?query=Cloud%20infrastructure%20visualization%20with%20servers%2C%20network%20connections%2C%20and%20data%20flow%20diagrams.%20Modern%20tech%20illustration%20showing%20cloud%20computing%20architecture%2C%20server%20clusters%2C%20and%20network%20topology.%20Professional%20red%20and%20white%20color%20scheme%20with%20clean%20geometric%20design.&width=600&height=400&seq=portfolio-red-4&orientation=landscape',
+      'A complete overhaul of the corporate website with a focus on user experience and modern design.',
+    image: CorporateWebsiteRedesignImg,
   },
 ];
 
@@ -80,10 +82,10 @@ const PortfolioCard = ({ project }) => (
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="py-20 px-6 md:px-20 bg-white">
+    <section id="portfolio" className="py-20 px-6 md:px-20 bg-white font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+          <h2 className="text-3xl md:text-4xl font-bold font-poppins text-gray-800">
             Our Portfolio
           </h2>
           <p className="mt-3 text-gray-600 max-w-xl mx-auto">
@@ -99,9 +101,10 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-12">
-          <button className="px-8 py-4 border-2 border-[#922e2e] text-[#922e2e] rounded-full hover:bg-[#922e2e] hover:text-white transition">
-            View More Projects
-          </button>
+          <Link to="/portfolioDetail" 
+          className="font-dmSans px-8 py-4 border-2 border-[#922e2e] text-[#922e2e] rounded-full hover:bg-[#922e2e] hover:text-white transition">
+          View More Projects
+          </Link>
         </div>
       </div>
     </section>
