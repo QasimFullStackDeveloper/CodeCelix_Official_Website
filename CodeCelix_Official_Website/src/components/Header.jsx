@@ -20,13 +20,13 @@ export default function Header({ logo }) {
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               About
             </a>
-            <a
-              href="#services"
+            <Link
+              to="/services"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Services
-            </a>
+            </Link>
             <Link
-              to="/portfolioDetail"
+              to="/portfolio"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Portfolio
             </Link>
