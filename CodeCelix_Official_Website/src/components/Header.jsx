@@ -30,16 +30,11 @@ export default function Header({ logo }) {
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Portfolio
             </Link>
-            <a
-              href="#team"
-              className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
-              Team
-            </a>
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Contact
-            </a>
+            </Link>
           </nav>
 
           <div className="flex items-center space-x-4 font-dmSans">

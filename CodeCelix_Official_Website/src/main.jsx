@@ -7,6 +7,8 @@ import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Services from './components/Services.jsx';
 import PortfolioPage from './portfolio/PortfolioPage.jsx';
+import ContactDetail from './components/ContactDetail.jsx';
+import PrivacyAndPolicy from './components/PrivacyAndPolicy.js';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +31,14 @@ const router = createBrowserRouter([
       {
         path: '/portfolioDetail',
         element: <PortfolioPage />,
+      }
+      {
+        path: '/contact',
+        element: <ContactDetail />,
+      },
+      {
+        path: '/privacy-policy',
+        element: <PrivacyAndPolicy />,
       },
     ],
   },
