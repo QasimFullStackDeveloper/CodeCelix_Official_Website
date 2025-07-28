@@ -1,5 +1,5 @@
 import React from 'react';
-import AboutMissionImg from '/About_Section/Our-mission.jpg';
+import AboutMissionImg from '/About_Image/Our-mission.jpg';
 
 const AboutSection = () => {
   const values = [

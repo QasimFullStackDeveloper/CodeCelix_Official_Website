@@ -1,5 +1,5 @@
-import ContactFormSection from './ContactFormSection';
-import ContactSectionCommon from './ContactSectionCommon';
+import ContactFormSection from '../home/ContactFormSection';
+import ContactSectionCommon from '../components/ContactSectionCommon';
 
 export default function ContactDetail() {
   return (

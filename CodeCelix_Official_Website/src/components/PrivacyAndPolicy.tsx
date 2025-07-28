@@ -40,10 +40,10 @@ export default function PrivacyAndPolicy() {
   return (
     <>
       {/* Privacy Hero */}
-      <section className="bg-white pt-32 pb-20">
+      <section className="bg-white pt-32 pb-20 font-inter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#922e2e] mb-6">
+            <h1 className="text-4xl md:text-5xl font-poppins font-bold text-[#922e2e] mb-6">
               Privacy Policy
             </h1>
             <p className="text-xl text-gray-600 mb-4 max-w-3xl">
@@ -66,12 +66,12 @@ export default function PrivacyAndPolicy() {
       </section>
 
       {/* Privacy Content */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 font-inter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="prose prose-lg max-w-none">
             {/* Introduction */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Introduction
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
@@ -94,7 +94,7 @@ export default function PrivacyAndPolicy() {
 
             {/* Data Collection */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Data Collection
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
@@ -103,7 +103,7 @@ export default function PrivacyAndPolicy() {
               </p>
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-[#922e2e] mb-3">
+                  <h3 className="font-semibold font-poppins text-[#922e2e] mb-3">
                     Information You Provide
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -115,7 +115,7 @@ export default function PrivacyAndPolicy() {
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="font-semibold text-[#922e2e] mb-3">
+                  <h3 className="font-semibold font-poppins text-[#922e2e] mb-3">
                     Information We Collect Automatically
                   </h3>
                   <ul className="space-y-2 text-gray-700">
@@ -133,7 +133,7 @@ export default function PrivacyAndPolicy() {
 
             {/* Data Usage */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Data Usage
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed">
@@ -144,7 +144,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-service-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Service Delivery
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -155,7 +155,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-customer-service-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Customer Support
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -166,7 +166,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-mail-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Communication
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -179,7 +179,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-bill-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Billing & Payments
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -190,7 +190,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-shield-check-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Security & Compliance
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -201,7 +201,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-bar-chart-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Analytics & Improvement
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -217,7 +217,7 @@ export default function PrivacyAndPolicy() {
 
             {/* Data Protection */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Data Protection
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -228,7 +228,7 @@ export default function PrivacyAndPolicy() {
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-gray-50 p-6 rounded-lg text-center">
                   <i className="ri-lock-line w-8 h-8 flex items-center justify-center text-[#922e2e] mx-auto mb-3"></i>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="font-semibold font-poppins text-gray-900 mb-2">
                     Encryption
                   </h4>
                   <p className="text-gray-700 text-sm">
@@ -238,7 +238,7 @@ export default function PrivacyAndPolicy() {
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg text-center">
                   <i className="ri-shield-check-line w-8 h-8 flex items-center justify-center text-[#922e2e] mx-auto mb-3"></i>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="font-semibold font-poppins text-gray-900 mb-2">
                     Access Control
                   </h4>
                   <p className="text-gray-700 text-sm">
@@ -248,7 +248,7 @@ export default function PrivacyAndPolicy() {
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg text-center">
                   <i className="ri-eye-line w-8 h-8 flex items-center justify-center text-[#922e2e] mx-auto mb-3"></i>
-                  <h4 className="font-semibold text-gray-900 mb-2">
+                  <h4 className="font-semibold font-poppins text-gray-900 mb-2">
                     Monitoring
                   </h4>
                   <p className="text-gray-700 text-sm">
@@ -262,7 +262,7 @@ export default function PrivacyAndPolicy() {
 
             {/* Third-party Services */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Third-party Services
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -271,7 +271,7 @@ export default function PrivacyAndPolicy() {
               </p>
               <div className="space-y-4">
                 <div className="border border-gray-200 rounded-lg p-6">
-                  <h4 className="font-semibold text-[#922e2e] mb-3">
+                  <h4 className="font-semibold font-poppins text-[#922e2e] mb-3">
                     Analytics Services
                   </h4>
                   <p className="text-gray-700 mb-2">
@@ -284,7 +284,7 @@ export default function PrivacyAndPolicy() {
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-6">
-                  <h4 className="font-semibold text-[#922e2e] mb-3">
+                  <h4 className="font-semibold font-poppins text-[#922e2e] mb-3">
                     Payment Processing
                   </h4>
                   <p className="text-gray-700 mb-2">
@@ -296,7 +296,7 @@ export default function PrivacyAndPolicy() {
                   </p>
                 </div>
                 <div className="border border-gray-200 rounded-lg p-6">
-                  <h4 className="font-semibold text-[#922e2e] mb-3">
+                  <h4 className="font-semibold font-poppins text-[#922e2e] mb-3">
                     Communication Tools
                   </h4>
                   <p className="text-gray-700 mb-2">
@@ -314,7 +314,7 @@ export default function PrivacyAndPolicy() {
 
             {/* Cookies Policy */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Cookies Policy
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -323,7 +323,7 @@ export default function PrivacyAndPolicy() {
               </p>
               <div className="space-y-4">
                 <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-green-800 mb-2">
+                  <h4 className="font-semibold font-poppins text-green-800 mb-2">
                     Essential Cookies
                   </h4>
                   <p className="text-green-700 text-sm">
@@ -332,7 +332,7 @@ export default function PrivacyAndPolicy() {
                   </p>
                 </div>
                 <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-blue-800 mb-2">
+                  <h4 className="font-semibold font-poppins text-blue-800 mb-2">
                     Analytics Cookies
                   </h4>
                   <p className="text-blue-700 text-sm">
@@ -340,7 +340,7 @@ export default function PrivacyAndPolicy() {
                   </p>
                 </div>
                 <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                  <h4 className="font-semibold text-yellow-800 mb-2">
+                  <h4 className="font-semibold font-poppins text-yellow-800 mb-2">
                     Marketing Cookies
                   </h4>
                   <p className="text-yellow-700 text-sm">
@@ -354,7 +354,7 @@ export default function PrivacyAndPolicy() {
 
             {/* User Rights */}
             <div className="mb-12">
-              <h2 className="text-2xl font-bold text-[#922e2e] mb-6">
+              <h2 className="text-2xl font-bold font-poppins text-[#922e2e] mb-6">
                 Your Rights
               </h2>
               <p className="text-gray-700 mb-6 leading-relaxed">
@@ -366,7 +366,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-eye-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Access
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -377,7 +377,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-edit-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Rectification
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -388,7 +388,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-delete-bin-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Erasure
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -401,7 +401,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-download-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Portability
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -412,7 +412,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-stop-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Object
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -423,7 +423,7 @@ export default function PrivacyAndPolicy() {
                   <div className="flex items-start space-x-3">
                     <i className="ri-pause-line w-5 h-5 flex items-center justify-center text-[#922e2e] mt-1"></i>
                     <div>
-                      <h4 className="font-semibold text-gray-900">
+                      <h4 className="font-semibold font-poppins text-gray-900">
                         Right to Restrict
                       </h4>
                       <p className="text-gray-700 text-sm">
@@ -439,10 +439,10 @@ export default function PrivacyAndPolicy() {
       </section>
 
       {/* FAQs Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-gray-50 py-16 font-inter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-[#922e2e] mb-4">
+            <h2 className="text-3xl font-bold font-poppins text-[#922e2e] mb-4">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
@@ -461,7 +461,7 @@ export default function PrivacyAndPolicy() {
                   onClick={() =>
                     setOpenItem(openItem === index ? null : index)
                   }>
-                  <span className="font-semibold text-gray-900 pr-4">
+                  <span className="font-semibold font-poppins text-gray-900 pr-4">
                     {faq.question}
                   </span>
                   <i
@@ -483,14 +483,14 @@ export default function PrivacyAndPolicy() {
       </section>
 
       {/* Privacy Contact US */}
-      <section className="bg-white py-16">
+      <section className="bg-white py-16 font-inter">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gray-50 rounded-2xl p-8 md:p-12 text-center">
             <div className="w-16 h-16 bg-[#922e2e]/10 rounded-full flex items-center justify-center mx-auto mb-6">
               <i className="ri-question-line w-8 h-8 flex items-center justify-center text-[#922e2e]"></i>
             </div>
 
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold font-poppins text-gray-900 mb-4">
               Have Questions About Our Privacy Policy?
             </h2>
 
@@ -502,12 +502,12 @@ export default function PrivacyAndPolicy() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/contact">
-                <button className="bg-[#922e2e] text-white px-8 py-3 rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                <button className="bg-[#922e2e] font-dmSans text-white px-8 py-3 rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
                   Contact Privacy Team
                 </button>
               </Link>
               <Link to="mailto:infocodecelix@gmail.com">
-                <button className="border border-[#922e2e] text-[#922e2e] px-8 py-3 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                <button className="border font-dmSans border-[#922e2e] text-[#922e2e] px-8 py-3 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
                   Email Us Directly
                 </button>
               </Link>

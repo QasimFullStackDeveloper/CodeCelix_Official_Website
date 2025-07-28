@@ -45,10 +45,10 @@ export default function CompanyTimeline() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Journey</h2>
+          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">Our Journey</h2>
           <div className="w-24 h-1 bg-[#922e2e] mx-auto rounded-full mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From startup to industry leader - here are the key milestones that
@@ -80,10 +80,10 @@ export default function CompanyTimeline() {
                           className={`${milestone.icon} text-[#922e2e] text-xl w-6 h-6 flex items-center justify-center`}></i>
                       </div>
                     </div>
-                    <div className="text-3xl font-bold text-[#922e2e] mb-2">
+                    <div className="text-3xl font-bold font-poppins text-[#922e2e] mb-2">
                       {milestone.year}
                     </div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">
+                    <h3 className="text-xl font-bold font-poppins text-gray-900 mb-3">
                       {milestone.title}
                     </h3>
                     <p className="text-gray-600 leading-relaxed">

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import EcommerecePlatformImg from '/Portfolio_Page/ProjectImage/ECommercePlatform.jpg';
-import HealthcareDashboardImg from '/Portfolio_Page/ProjectImage/HealthCareUI_UX.jpg';
+import HealthcareDashboardImg from '/Portfolio_Page/ProjectImage/HealthCareDashboard.png';
 import FinancialMobileAppImg from '/Portfolio_Page/ProjectImage/Financial_Mobile_App.jpg';
 import CorporateWebsiteRedesignImg from '/Portfolio_Page/ProjectImage/Corporate_Website_Redesign.jpg';
 
@@ -13,8 +13,8 @@ const portfolioData = [
     image: EcommerecePlatformImg,
   },
   {
-    title: 'Healthcare Mobile App',
-    category: 'Mobile Development',
+    title: 'Healthcare AI Chatbot',
+    category: 'Web Development',
     description:
       'A patient management system with appointment scheduling, medical records, and telemedicine capabilities.',
     image: HealthcareDashboardImg,
@@ -36,7 +36,7 @@ const portfolioData = [
 ];
 
 const PortfolioCard = ({ project }) => (
-  <div className="bg-white shadow-md rounded-xl overflow-hidden flex flex-col transition hover:shadow-xl cursor-pointer">
+  <div className="bg-white shadow-md rounded-xl overflow-hidden flex flex-col transition hover:shadow-xl cursor-pointer font-inter">
     <div className="relative overflow-hidden">
       <img
         src={project.image}
@@ -50,18 +50,19 @@ const PortfolioCard = ({ project }) => (
 
     <div className="p-5 flex flex-col justify-between grow">
       <div>
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+        <h3 className="text-xl font-semibold font-poppins text-gray-800 mb-2">
           {project.title}
         </h3>
         <p className="text-sm text-gray-600">{project.description}</p>
       </div>
 
       <div className="flex items-center justify-between mt-4">
-        <a
-          href="#"
-          className="text-sm text-[#922e2e] font-medium hover:underline transition">
-          View Project →
-        </a>
+        <Link
+          to="https://aidoctor.runasp.net/"
+          className="text-sm text-[#922e2e] font-dmSans font-medium hover:underline transition">
+          View Project 
+          <i className="ri-arrow-right-line ml-2 w-4 h-4 flex items-center justify-center"></i>
+        </Link>
         <div className="flex gap-2">
           <button
             title="Open"
