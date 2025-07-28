@@ -557,3 +557,4 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+console.log("hi")
