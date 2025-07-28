@@ -30,6 +30,12 @@ export default function ServicesSection() {
       description:
         'From startup consulting to digital transformation, our business solutions are designed to solve real-world challenges. We help you scale smartly — with tools, strategy, and systems that grow with you. Your Success, Our Mission.',
     },
+    {
+      icon: 'ri-smartphone-line',
+      title: 'App Development',
+      description:
+        'We build high-performance native and cross-platform mobile apps that engage users and drive business growth across iOS and Android. From design and development to deployment and support, our end-to-end app development services ensure a seamless user experience tailored to your business needs.',
+    },
   ];
   return (
     <section id="services" className="py-20 bg-gray-50">
