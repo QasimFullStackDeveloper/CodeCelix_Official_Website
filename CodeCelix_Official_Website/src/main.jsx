@@ -6,6 +6,8 @@ import NotFound from './components/NotFound.jsx';
 import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Services from './components/Services.jsx';
+import ServicesPage from './components/ServicesDetail.jsx';
+import DiscussProject from './components/DiscussProject.jsx';
 import PortfolioPage from './portfolio/PortfolioPage.jsx';
 import ContactDetail from './components/ContactDetail.jsx';
 import PrivacyAndPolicy from './components/PrivacyAndPolicy.js';
@@ -29,6 +31,13 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
+        path: '/services2',
+        element: <ServicesPage/>,
+      },
+      {
+        path: '/discussproject',
+        element: <DiscussProject/>,
+      }
         path: '/portfolioDetail',
         element: <PortfolioPage />,
       }
