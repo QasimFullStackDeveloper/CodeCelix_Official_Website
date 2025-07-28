@@ -6,6 +6,7 @@ import NotFound from './components/NotFound.jsx';
 import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
 import Services from './components/Services.jsx';
+import ContactDetail from './components/ContactDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: '/services',
         element: <Services />,
+      },
+      {
+        path: '/contact',
+        element: <ContactDetail />,
       },
     ],
   },

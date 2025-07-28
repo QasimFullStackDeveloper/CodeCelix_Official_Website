@@ -66,36 +66,20 @@ const Footer = ({ logo }) => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 font-poppins">
-              Services
-            </h4>
+            <h4 className="text-lg font-semibold mb-4 font-poppins">Legal</h4>
             <ul className="space-y-2">
               <li>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors">
-                  Web Development
+                  Terms & Conditions
                 </a>
               </li>
               <li>
                 <a
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors">
-                  Mobile Apps
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors">
-                  Cloud Solutions
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:text-white transition-colors">
-                  IT Consulting
+                  Privacy & Policy
                 </a>
               </li>
             </ul>
@@ -116,11 +100,6 @@ const Footer = ({ logo }) => {
               href="#"
               className="text-gray-300 hover:text-white text-sm transition-colors">
               Terms of Service
-            </a>
-            <a
-              href="#"
-              className="text-gray-300 hover:text-white text-sm transition-colors">
-              Cookie Policy
             </a>
           </div>
         </div>
