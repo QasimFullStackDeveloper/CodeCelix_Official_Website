@@ -37,32 +37,32 @@ const Footer = ({ logo }) => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
+                <Link
+                  to="/"
                   className="text-gray-300 hover:text-white transition-colors">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#services"
+                <Link
+                  to="/services"
                   className="text-gray-300 hover:text-white transition-colors">
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#portfolio"
+                <Link
+                  to="/portfolio"
                   className="text-gray-300 hover:text-white transition-colors">
                   Portfolio
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#contact"
+                <Link
+                  to="/contact"
                   className="text-gray-300 hover:text-white transition-colors">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
