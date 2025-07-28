@@ -4,37 +4,31 @@ export default function ServicesSection() {
       icon: 'ri-code-line',
       title: 'Web Development',
       description:
-        'Custom web applications built with modern frameworks and technologies to deliver exceptional user experiences.',
+        'We build responsive, high-performing websites tailored to your business needs from corporate sites to custom platforms. Our development stack ensures speed, security, and scalability. Let your website leave a lasting first impression.',
     },
     {
       icon: 'ri-smartphone-line',
-      title: 'Mobile Apps',
+      title: 'UI/UX Design',
       description:
-        'Native and cross-platform mobile applications that engage users and drive business growth.',
+        'We design intuitive and elegant interfaces that offer a seamless user experience. Our UI/UX process is rooted in user research, wireframing, and aesthetic detail to ensure conversion and satisfaction. Great design is not just pretty it works.',
     },
     {
       icon: 'ri-cloud-line',
-      title: 'Cloud Solutions',
+      title: 'Business Solutions',
       description:
-        'Scalable cloud infrastructure and migration services to optimize performance and reduce costs.',
+        'Unlock business efficiency with smart AI integrations — from chatbots to data-driven automation. We tailor AI solutions to streamline workflows, boost engagement, and deliver intelligent insights. The future of tech, implemented today.',
     },
     {
       icon: 'ri-database-line',
-      title: 'Data Analytics',
+      title: 'Internship Programs',
       description:
-        'Advanced analytics and business intelligence solutions to transform data into actionable insights.',
+        'Codecelix offers hands-on internship programs for aspiring developers, designers, and marketers. Interns work on real client projects, gaining valuable skills, mentorship, and exposure to industry tools. Learn, grow, and launch your career with us.',
     },
     {
       icon: 'ri-shield-check-line',
-      title: 'Cybersecurity',
+      title: 'AI Solutions',
       description:
-        'Comprehensive security solutions to protect your digital assets and maintain compliance.',
-    },
-    {
-      icon: 'ri-settings-line',
-      title: 'IT Consulting',
-      description:
-        'Strategic technology consulting to align your IT infrastructure with business objectives.',
+        'From startup consulting to digital transformation, our business solutions are designed to solve real-world challenges. We help you scale smartly — with tools, strategy, and systems that grow with you. Your Success, Our Mission.',
     },
   ];
   return (
