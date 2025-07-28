@@ -54,7 +54,7 @@ export default function PrivacyAndPolicy() {
             <div className="flex items-center space-x-4 text-sm text-gray-500">
               <div className="flex items-center">
                 <i className="ri-calendar-line w-4 h-4 flex items-center justify-center mr-2"></i>
-                <span>Last Updated: January 15, 2024</span>
+                <span>Last Updated: July 28, 2025</span>
               </div>
               <div className="flex items-center">
                 <i className="ri-shield-check-line w-4 h-4 flex items-center justify-center mr-2 text-[#922e2e]"></i>
