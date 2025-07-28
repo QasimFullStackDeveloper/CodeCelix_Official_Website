@@ -31,7 +31,7 @@ const PortfolioHeroSection = () => {
                 </div>
                 <div>
                   <div className="text-2xl font-bold font-poppins text-gray-900">
-                    50+
+                    500+
                   </div>
                   <div className="text-sm text-gray-600">
                     Projects Completed
@@ -44,7 +44,7 @@ const PortfolioHeroSection = () => {
                 </div>
                 <div>
                   <div className="text-2xl font-bold font-poppins text-gray-900">
-                    40+
+                    400+
                   </div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
