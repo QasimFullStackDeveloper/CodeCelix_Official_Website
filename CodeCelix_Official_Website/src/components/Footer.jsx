@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Footer = ({ logo }) => {
   return (
     <footer className="bg-gray-900 text-white pt-16 pb-6 font-inter">
@@ -76,11 +78,11 @@ const Footer = ({ logo }) => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/privacy-policy"
                   className="text-gray-300 hover:text-white transition-colors">
                   Privacy & Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -91,11 +93,11 @@ const Footer = ({ logo }) => {
             © 2025 Codecelix. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <a
-              href="#"
+            <Link
+              to="/privacy-policy"
               className="text-gray-300 hover:text-white text-sm transition-colors">
               Privacy Policy
-            </a>
+            </Link>
             <a
               href="#"
               className="text-gray-300 hover:text-white text-sm transition-colors">
