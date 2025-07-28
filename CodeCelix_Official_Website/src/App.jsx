@@ -1,15 +1,16 @@
 import './App.css';
 import Header from './components/Header';
 import { Outlet } from 'react-router';
-import Logo from '/Logo/CodeCelix_Logo.jpg';
+import LogoDark from '/Logo/LogoDark.png';
+import LogoLight from '/Logo/LogoLight.png';
 import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="min-h-screen">
-      <Header logo={Logo} />
+      <Header logo={LogoLight} />
       <Outlet />
-      <Footer logo={Logo} />
+      <Footer logo={LogoDark} />
     </div>
   );
 }

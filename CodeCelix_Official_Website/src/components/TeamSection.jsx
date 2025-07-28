@@ -1,25 +1,26 @@
+import LeadDevImg from '/Team_Section/LeadDevImg.png';
+import FounderImg from '/Team_Section/FounderImg.png';
+import CoFouderImg from '/Team_Section/CoFounderImg.png';
+
 export default function TeamSection() {
   const team = [
     {
-      name: 'Sarah Chen',
-      role: 'CEO & Co-Founder',
-      image:
-        'https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20Asian%20female%20CEO%20in%20modern%20office%20setting%2C%20wearing%20business%20attire%2C%20confident%20smile%2C%20clean%20background%20with%20soft%20lighting.%20Professional%20corporate%20portrait%20with%20red%20and%20white%20color%20scheme%2C%20executive%20leadership%20photo.&width=400&height=400&seq=team-red-1&orientation=squarish',
-      linkedin: '#',
+      name: 'Usman Qureshi',
+      role: 'CEO & Founder',
+      image: FounderImg,
+      linkedin: 'https://www.linkedin.com/in/usman-qureshi-24b2b2258/',
     },
     {
-      name: 'Michael Rodriguez',
-      role: 'CTO & Co-Founder',
-      image:
-        'https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20Hispanic%20male%20CTO%20in%20modern%20tech%20office%2C%20wearing%20smart%20casual%20attire%2C%20friendly%20professional%20expression%2C%20clean%20background%20with%20soft%20lighting.%20Corporate%20portrait%20with%20red%20and%20white%20color%20scheme%2C%20technology%20executive%20photo.&width=400&height=400&seq=team-red-2&orientation=squarish',
-      linkedin: '#',
+      name: 'Zainab Saeed',
+      role: 'COO & Co-Founder',
+      image: CoFouderImg,
+      linkedin: 'https://www.linkedin.com/in/zainab-saeed-36aa2b34b/',
     },
     {
-      name: 'Emily Johnson',
+      name: 'Sameer Qureshi',
       role: 'Lead Developer',
-      image:
-        'https://readdy.ai/api/search-image?query=Professional%20headshot%20of%20Caucasian%20female%20software%20developer%20in%20modern%20office%2C%20wearing%20casual%20professional%20attire%2C%20confident%20smile%2C%20clean%20background%20with%20soft%20lighting.%20Corporate%20portrait%20with%20red%20and%20white%20color%20scheme%2C%20tech%20professional%20photo.&width=400&height=400&seq=team-red-3&orientation=squarish',
-      linkedin: '#',
+      image: LeadDevImg,
+      linkedin: 'https://www.linkedin.com/in/sameer-qureshi786/',
     },
   ];
 

@@ -1,10 +1,11 @@
 import './index.css';
 import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
-import { createBrowserRouter, RouterProvider } from 'react-router'; 
+import { createBrowserRouter, RouterProvider } from 'react-router';
 import NotFound from './components/NotFound.jsx';
 import Home from './components/Home.jsx';
 import Portfolio from './components/Portfolio.jsx';
+import Services from './components/Services.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,8 +18,12 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/portfolio',        
+        path: '/portfolio',
         element: <Portfolio />,
+      },
+      {
+        path: '/services',
+        element: <Services />,
       },
     ],
   },
