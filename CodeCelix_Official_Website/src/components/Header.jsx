@@ -15,11 +15,11 @@ export default function Header({ logo }) {
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               Home
             </Link>
-            <a
-              href="#about"
+            <Link
+              to="/about"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
               About
-            </a>
+            </Link>
             <Link
               to="/services"
               className="text-gray-700 hover:text-[#922e2e] transition-colors font-medium">
@@ -38,9 +38,11 @@ export default function Header({ logo }) {
           </nav>
 
           <div className="flex items-center space-x-4 font-dmSans">
-            <button className="bg-[#922e2e] text-white px-6 py-2 rounded-full hover:bg-[#7a2525] transition-colors font-medium whitespace-nowrap cursor-pointer">
+            <Link
+              to="/contact"
+              className="bg-[#922e2e] text-white px-6 py-2 rounded-full hover:bg-[#7a2525] transition-colors font-medium whitespace-nowrap cursor-pointer">
               Get Started
-            </button>
+            </Link>
             <button className="md:hidden p-2 cursor-pointer">
               <i className="ri-menu-line text-xl w-6 h-6 flex items-center justify-center"></i>
             </button>

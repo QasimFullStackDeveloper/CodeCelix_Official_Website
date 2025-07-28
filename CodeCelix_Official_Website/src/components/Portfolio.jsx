@@ -101,9 +101,10 @@ const Portfolio = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Link to="/portfolioDetail" 
-          className="font-dmSans px-8 py-4 border-2 border-[#922e2e] text-[#922e2e] rounded-full hover:bg-[#922e2e] hover:text-white transition">
-          View More Projects
+          <Link
+            to="/portfolio"
+            className="font-dmSans px-8 py-4 border-2 border-[#922e2e] text-[#922e2e] rounded-full hover:bg-[#922e2e] hover:text-white transition">
+            View More Projects
           </Link>
         </div>
       </div>

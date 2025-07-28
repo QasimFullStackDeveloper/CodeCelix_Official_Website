@@ -4,12 +4,11 @@ import PortfolioHeroSectionBgImg from '/Portfolio_Page/HeroSectionBgImg.jpg';
 const PortfolioHeroSection = () => {
   return (
     <section className="pt-20 pb-16 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden font-inter">
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url('${PortfolioHeroSectionImg}')`
-        }}
-      >
+          backgroundImage: `url('${PortfolioHeroSectionImg}')`,
+        }}>
         <div className="absolute inset-0 bg-white/80"></div>
       </div>
 
@@ -20,7 +19,9 @@ const PortfolioHeroSection = () => {
               Our <span className="text-[#922e2e]">Portfolio</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-2xl">
-              Discover our exceptional work and see how we've transformed businesses through innovative technology solutions and creative digital experiences.
+              Discover our exceptional work and see how we've transformed
+              businesses through innovative technology solutions and creative
+              digital experiences.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -29,8 +30,12 @@ const PortfolioHeroSection = () => {
                   <i className="ri-code-s-slash-line text-[#922e2e] w-6 h-6 flex items-center justify-center"></i>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold font-poppins text-gray-900">50+</div>
-                  <div className="text-sm text-gray-600">Projects Completed</div>
+                  <div className="text-2xl font-bold font-poppins text-gray-900">
+                    50+
+                  </div>
+                  <div className="text-sm text-gray-600">
+                    Projects Completed
+                  </div>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -38,20 +43,18 @@ const PortfolioHeroSection = () => {
                   <i className="ri-user-heart-line text-[#922e2e] w-6 h-6 flex items-center justify-center"></i>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold font-poppins text-gray-900">40+</div>
+                  <div className="text-2xl font-bold font-poppins text-gray-900">
+                    40+
+                  </div>
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
               </div>
             </div>
-
-            <button className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold font-dmSans text-lg whitespace-nowrap cursor-pointer">
-              View Our Work
-            </button>
           </div>
 
           <div className="relative">
             <div className="relative z-10">
-              <img 
+              <img
                 src={PortfolioHeroSectionBgImg}
                 alt="Portfolio Creativity"
                 className="w-full h-auto rounded-2xl shadow-2xl"

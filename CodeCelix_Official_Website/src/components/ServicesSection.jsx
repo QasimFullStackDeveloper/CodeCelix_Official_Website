@@ -63,18 +63,8 @@ export default function ServicesSection() {
               <p className="text-gray-600 leading-relaxed mb-6">
                 {service.description}
               </p>
-              <div className="flex items-center text-[#922e2e] font-medium group-hover:text-[#7a2525] transition-colors">
-                Learn More
-                <i className="ri-arrow-right-line ml-2 w-4 h-4 flex items-center justify-center"></i>
-              </div>
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-12">
-          <button className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
-            View All Services
-          </button>
         </div>
       </div>
     </section>

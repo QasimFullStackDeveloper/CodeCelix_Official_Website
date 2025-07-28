@@ -8,6 +8,7 @@ import ContactDetail from './components/ContactDetail.jsx';
 import PrivacyAndPolicy from './components/PrivacyAndPolicy.js';
 import ServicesDetail from './components/ServicesDetail.jsx';
 import PortfolioDetail from './portfolio/PortfolioDetail.jsx';
+import AboutDetail from './about/AboutDetail.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />,
+      },
+      {
+        path: '/about',
+        element: <AboutDetail />,
       },
       {
         path: '/services',

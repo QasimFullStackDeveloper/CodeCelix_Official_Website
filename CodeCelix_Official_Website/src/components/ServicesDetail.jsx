@@ -1,6 +1,7 @@
 import React from 'react';
 import ServicesSection from './ServicesSection';
 import ContactSectionCommon from './ContactSectionCommon';
+import { Link } from 'react-router-dom';
 
 const ServicesDetail = () => {
   const features = [
@@ -116,12 +117,16 @@ const ServicesDetail = () => {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <button className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                <Link
+                  to="/portfolio"
+                  className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
                   View Portfolio
-                </button>
-                <button className="border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
-                  Get Quote
-                </button>
+                </Link>
+                <Link
+                  to="/contact"
+                  className="border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                  Contact Us
+                </Link>
               </div>
             </div>
           </div>

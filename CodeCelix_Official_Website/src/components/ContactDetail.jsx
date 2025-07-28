@@ -1,5 +1,11 @@
 import ContactFormSection from './ContactFormSection';
+import ContactSectionCommon from './ContactSectionCommon';
 
 export default function ContactDetail() {
-  return <ContactFormSection />;
+  return (
+    <>
+      <ContactFormSection />;
+      <ContactSectionCommon />
+    </>
+  );
 }

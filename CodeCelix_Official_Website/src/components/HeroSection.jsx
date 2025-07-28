@@ -1,5 +1,6 @@
 import HeroBgImg from '/Hero_Section/Bg_Hero_Section.jpg';
 import HeroSideImg from '/Hero_Section/HeroSection_Side_Img.jpg';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -32,25 +33,35 @@ export default function HeroSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 font-dmSans">
-              <button className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
+              <Link
+                to="/contact"
+                className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
                 Get Started Today
-              </button>
-              <button className="border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
+              </Link>
+              <Link
+                to="/about"
+                className="border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
                 Learn More
-              </button>
+              </Link>
             </div>
 
             <div className="flex items-center space-x-8 pt-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#922e2e] font-poppins">500+</div>
+                <div className="text-3xl font-bold text-[#922e2e] font-poppins">
+                  500+
+                </div>
                 <div className="text-gray-600">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#922e2e] font-poppins">98%</div>
+                <div className="text-3xl font-bold text-[#922e2e] font-poppins">
+                  98%
+                </div>
                 <div className="text-gray-600">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-[#922e2e] font-poppins">24/7</div>
+                <div className="text-3xl font-bold text-[#922e2e] font-poppins">
+                  24/7
+                </div>
                 <div className="text-gray-600">Support Available</div>
               </div>
             </div>
