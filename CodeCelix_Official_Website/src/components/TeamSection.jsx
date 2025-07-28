@@ -25,10 +25,10 @@ export default function TeamSection() {
   ];
 
   return (
-    <section id="team" className="py-20 bg-gray-50">
+    <section id="team" className="py-20 bg-gray-50 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">
             Meet Our Team
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -51,10 +51,10 @@ export default function TeamSection() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                <h3 className="text-xl font-bold font-poppins text-gray-900 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-[#922e2e] font-medium mb-4">{member.role}</p>
+                <p className="text-[#922e2e] font-poppins font-medium mb-4">{member.role}</p>
                 <div className="flex justify-center space-x-4">
                   <a
                     href={member.linkedin}
