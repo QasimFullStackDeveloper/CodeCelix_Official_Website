@@ -6,18 +6,18 @@ import CorporateWebsiteRedesignImg from '/Portfolio_Page/ProjectImage/Corporate_
 
 const portfolioData = [
   {
-    title: 'E-Commerce Platform',
-    category: 'Web Development',
-    description:
-      'A comprehensive e-commerce solution with advanced analytics, inventory management, and seamless payment integration.',
-    image: EcommerecePlatformImg,
-  },
-  {
     title: 'Healthcare AI Chatbot',
     category: 'Web Development',
     description:
       'A patient management system with appointment scheduling, medical records, and telemedicine capabilities.',
     image: HealthcareDashboardImg,
+  },
+  {
+    title: 'E-Commerce Platform',
+    category: 'Web Development',
+    description:
+      'A comprehensive e-commerce solution with advanced analytics, inventory management, and seamless payment integration.',
+    image: EcommerecePlatformImg,
   },
   {
     title: 'Financial Dashboard',
@@ -60,7 +60,7 @@ const PortfolioCard = ({ project }) => (
         <Link
           to="https://aidoctor.runasp.net/"
           className="text-sm text-[#922e2e] font-dmSans font-medium hover:underline transition">
-          View Project 
+          View Project
           <i className="ri-arrow-right-line ml-2 w-4 h-4 flex items-center justify-center"></i>
         </Link>
         <div className="flex gap-2">
