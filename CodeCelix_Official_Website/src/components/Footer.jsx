@@ -45,6 +45,13 @@ const Footer = ({ logo }) => {
               </li>
               <li>
                 <Link
+                  to="/about"
+                  className="text-gray-300 hover:text-white transition-colors">
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/services"
                   className="text-gray-300 hover:text-white transition-colors">
                   Services
@@ -71,11 +78,11 @@ const Footer = ({ logo }) => {
             <h4 className="text-lg font-semibold mb-4 font-poppins">Legal</h4>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/terms-and-conditions"
                   className="text-gray-300 hover:text-white transition-colors">
                   Terms & Conditions
-                </a>
+                </Link>
               </li>
               <li>
                 <Link
@@ -96,13 +103,13 @@ const Footer = ({ logo }) => {
             <Link
               to="/privacy-policy"
               className="text-gray-300 hover:text-white text-sm transition-colors">
-              Privacy Policy
+              Privacy & Policy
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/terms-and-conditions"
               className="text-gray-300 hover:text-white text-sm transition-colors">
-              Terms of Service
-            </a>
+              Terms & Conditions
+            </Link>
           </div>
         </div>
       </div>

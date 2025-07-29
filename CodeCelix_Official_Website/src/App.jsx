@@ -1,13 +1,15 @@
 import './App.css';
 import Header from './components/Header';
 import { Outlet } from 'react-router';
-import LogoDark from '/Logo/LogoDark.png';
-import LogoLight from '/Logo/LogoLight.png';
+import LogoDark from '/Home/Logo/LogoDark.png';
+import LogoLight from '/Home/Logo/LogoLight.png';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <div className="min-h-screen">
+      <ScrollToTop />
       <Header logo={LogoLight} />
       <Outlet />
       <Footer logo={LogoDark} />

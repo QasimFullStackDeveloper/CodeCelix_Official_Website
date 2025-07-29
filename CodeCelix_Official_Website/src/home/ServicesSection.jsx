@@ -38,10 +38,10 @@ export default function ServicesSection() {
     },
   ];
   return (
-    <section id="services" className="py-20 bg-gray-50">
+    <section id="services" className="py-20 bg-gray-50 font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-6">What We Do</h2>
+          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">What We Do</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             We offer comprehensive technology solutions designed to accelerate
             your business growth and digital transformation journey.
@@ -57,7 +57,7 @@ export default function ServicesSection() {
                 <i
                   className={`${service.icon} text-2xl text-[#922e2e] w-6 h-6 flex items-center justify-center`}></i>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4">
+              <h3 className="text-xl font-bold font-poppins text-gray-900 mb-4">
                 {service.title}
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">

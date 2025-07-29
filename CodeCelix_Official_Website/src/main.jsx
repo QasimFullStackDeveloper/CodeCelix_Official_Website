@@ -3,12 +3,13 @@ import { createRoot } from 'react-dom/client';
 import App from './App.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router';
 import NotFound from './components/NotFound.jsx';
-import Home from './components/Home.jsx';
-import ContactDetail from './components/ContactDetail.jsx';
-import PrivacyAndPolicy from './components/PrivacyAndPolicy.js';
-import ServicesDetail from './components/ServicesDetail.jsx';
-import PortfolioDetail from './portfolio/PortfolioDetail.jsx';
+import Home from './home/Home.jsx';
 import AboutDetail from './about/AboutDetail.jsx';
+import ServicesDetail from './services/ServicesDetail.jsx';
+import PortfolioDetail from './portfolio/PortfolioDetail.jsx';
+import ContactDetail from './contact/ContactDetail.jsx';
+import PrivacyAndPolicy from './components/PrivacyAndPolicy.js';
+import TermAndConditionPage from './term&condition/Term_and_ConditionPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: '/privacy-policy',
         element: <PrivacyAndPolicy />,
+      },
+      {
+        path: '/terms-and-conditions',
+        element: <TermAndConditionPage />,
       },
     ],
   },

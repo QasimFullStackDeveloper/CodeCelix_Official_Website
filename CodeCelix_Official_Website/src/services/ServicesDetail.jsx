@@ -1,7 +1,9 @@
 import React from 'react';
-import ServicesSection from './ServicesSection';
-import ContactSectionCommon from './ContactSectionCommon';
+import ServicesSection from '../home/ServicesSection';
+import ContactSectionCommon from '../components/ContactSectionCommon';
 import { Link } from 'react-router-dom';
+import ServiceTeam from '/Services_Image/ServiceTeamImg.jpg';
+import ServiceHeroSectionImg from '/Services_Image/ServiceHeroSectionImg.jpg';
 
 const ServicesDetail = () => {
   const features = [
@@ -29,11 +31,11 @@ const ServicesDetail = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-white to-gray-50">
+      <section className="pt-32 pb-20 bg-gradient-to-br from-white to-gray-50 font-inter">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins text-gray-900 mb-6 leading-tight">
                 Our <span className="text-[#922e2e]">Services</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-xl">
@@ -58,7 +60,7 @@ const ServicesDetail = () => {
             <div className="relative">
               <div className="relative z-10">
                 <img
-                  src="https://readdy.ai/api/search-image?query=modern%20technology%20services%20illustration%20with%20abstract%20geometric%20shapes%2C%20digital%20transformation%20concept%2C%20burgundy%20red%20accents%2C%20clean%20minimal%20background%2C%20professional%20tech%20consulting%20visualization%2C%20software%20development%20icons%2C%20cloud%20computing%20elements%2C%20data%20analytics%20graphics%2C%20cybersecurity%20symbols%2C%20mobile%20app%20development%2C%20web%20technologies%2C%20futuristic%20digital%20workspace&width=600&height=500&seq=services-hero&orientation=landscape"
+                  src={ServiceHeroSectionImg}
                   alt="Technology Services Illustration"
                   className="w-full h-auto rounded-2xl shadow-2xl object-top"
                 />
@@ -79,7 +81,7 @@ const ServicesDetail = () => {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
               <img
-                src="https://readdy.ai/api/search-image?query=professional%20technology%20team%20working%20on%20digital%20solutions%2C%20modern%20office%20environment%20with%20multiple%20screens%2C%20software%20development%20workspace%2C%20collaborative%20tech%20environment%2C%20burgundy%20red%20color%20accents%2C%20clean%20professional%20setting%2C%20developers%20coding%2C%20project%20management%2C%20digital%20transformation%20workflow%2C%20team%20collaboration&width=600&height=500&seq=featured-services&orientation=landscape"
+                src={ServiceTeam}
                 alt="CODECELIX Team Working"
                 className="w-full h-auto rounded-2xl shadow-xl object-top"
               />
@@ -88,7 +90,7 @@ const ServicesDetail = () => {
             </div>
 
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">
                 Why Choose <span className="text-[#922e2e]">CODECELIX</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
@@ -105,7 +107,7 @@ const ServicesDetail = () => {
                         className={`${feature.icon} text-lg text-[#922e2e] w-4 h-4 flex items-center justify-center`}></i>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-1">
+                      <h3 className="font-semibold font-poppins text-gray-900 mb-1">
                         {feature.title}
                       </h3>
                       <p className="text-sm text-gray-600">
@@ -119,12 +121,12 @@ const ServicesDetail = () => {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/portfolio"
-                  className="bg-[#922e2e] text-white px-8 py-4 rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                  className="bg-[#922e2e] text-white px-8 py-4 font-dmSans rounded-full hover:bg-[#7a2525] transition-colors font-semibold whitespace-nowrap cursor-pointer">
                   View Portfolio
                 </Link>
                 <Link
                   to="/contact"
-                  className="border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
+                  className="border-2 font-dmSans border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold whitespace-nowrap cursor-pointer">
                   Contact Us
                 </Link>
               </div>

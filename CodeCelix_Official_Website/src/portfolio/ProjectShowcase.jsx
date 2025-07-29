@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import EcommerecePlatformImg from '/Portfolio_Page/ProjectImage/ECommercePlatform.jpg';
 import HealthcareDashboardImg from '/Portfolio_Page/ProjectImage/HealthCareUI_UX.jpg';
@@ -14,7 +15,6 @@ const ProjectShowcase = () => {
     'All',
     'Web Development',
     'UI/UX',
-    // 'SaaS Solutions',
     'Mobile Apps',
     'E-commerce'
   ];
@@ -53,7 +53,7 @@ const ProjectShowcase = () => {
       title: 'Learning Management System',
       description: 'Interactive educational platform with course management and progress tracking',
       image: LearningManagementSystemImg,
-      category: 'SaaS Solutions'
+      category: 'Web Development'
     },
     {
       id: 6,
@@ -121,10 +121,10 @@ const ProjectShowcase = () => {
                   {project.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center text-[#922e2e] font-medium group-hover:text-[#7a2525] transition-colors">
+                  <Link to="https://aidoctor.runasp.net/" className="flex items-center font-dmSans text-[#922e2e] font-medium group-hover:text-[#7a2525] transition-colors">
                     View Project
                     <i className="ri-arrow-right-line ml-2 w-4 h-4 flex items-center justify-center"></i>
-                  </div>
+                  </Link>
                   <div className="flex space-x-2">
                     <button className="w-8 h-8 bg-gray-100 rounded-full flex items-center justify-center hover:bg-[#922e2e] hover:text-white transition-colors cursor-pointer">
                       <i className="ri-external-link-line w-4 h-4 flex items-center justify-center"></i>

@@ -1,5 +1,5 @@
-import HeroBgImg from '/Hero_Section/Bg_Hero_Section.jpg';
-import HeroSideImg from '/Hero_Section/HeroSection_Side_Img.jpg';
+import HeroBgImg from '/Home/Hero_Section/Bg_Hero_Section.jpg';
+import HeroSideImg from '/Home/Hero_Section/HeroSection_Side_Img.jpg';
 import { Link } from 'react-router-dom';
 
 export default function HeroSection() {

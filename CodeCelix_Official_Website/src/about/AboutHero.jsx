@@ -1,13 +1,15 @@
+import HeroSectionImg from '/About_Image/HeroSectionSideImg.jpg';;
+
 export default function AboutHero() {
   return (
-    <section className="relative bg-gradient-to-br from-red-50 to-red-100 pt-20 pb-16 overflow-hidden">
+    <section className="relative bg-gradient-to-br from-red-50 to-red-100 pt-20 pb-16 overflow-hidden font-inter">
       <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/70 to-transparent"></div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[80vh]">
           <div className="space-y-8">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-5xl lg:text-6xl font-bold font-poppins text-gray-900 leading-tight">
                 About
                 <span className="text-[#922e2e]"> CODECELIX</span>
               </h1>
@@ -49,7 +51,7 @@ export default function AboutHero() {
             <div className="absolute inset-0 bg-gradient-to-br from-[#922e2e] to-red-600 rounded-3xl transform rotate-3 opacity-20"></div>
             <div className="relative">
               <img
-                src="https://readdy.ai/api/search-image?query=Abstract%20technology%20illustration%20featuring%20interconnected%20nodes%2C%20digital%20networks%2C%20and%20geometric%20patterns%20in%20burgundy%20and%20red%20tones.%20Modern%20tech%20company%20visual%20with%20floating%20elements%2C%20circuit%20patterns%2C%20and%20innovative%20design%20elements.%20Clean%2C%20professional%2C%20and%20futuristic%20atmosphere%20with%20minimal%20background.&width=600&height=500&seq=about-hero-red-1&orientation=landscape"
+                src={HeroSectionImg}
                 alt="CODECELIX Technology Innovation"
                 className="w-full h-auto rounded-3xl shadow-2xl object-cover"
               />

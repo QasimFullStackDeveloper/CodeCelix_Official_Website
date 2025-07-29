@@ -1,6 +1,6 @@
-import LeadDevImg from '/Team_Section/LeadDevImg.png';
-import FounderImg from '/Team_Section/FounderImg.png';
-import CoFouderImg from '/Team_Section/CoFounderImg.png';
+import LeadDevImg from '/Home/Team_Section/LeadDevImg.png';
+import FounderImg from '/Home/Team_Section/FounderImg.png';
+import CoFouderImg from '/Home/Team_Section/CoFounderImg.png';
 
 export default function TeamSection() {
   const team = [
