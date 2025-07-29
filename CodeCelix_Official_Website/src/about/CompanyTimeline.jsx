@@ -4,7 +4,7 @@ export default function CompanyTimeline() {
       year: '2019',
       title: 'Company Founded',
       description:
-        'CODECELIX was established by Sarah Chen and Michael Rodriguez with a vision to transform businesses through technology.',
+        'CODECELIX was established by Usman Qureshi with a vision to transform businesses through technology.',
       icon: 'ri-lightbulb-line',
     },
     {
@@ -48,7 +48,9 @@ export default function CompanyTimeline() {
     <section className="py-20 bg-white font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">Our Journey</h2>
+          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">
+            Our Journey
+          </h2>
           <div className="w-24 h-1 bg-[#922e2e] mx-auto rounded-full mb-4"></div>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             From startup to industry leader - here are the key milestones that

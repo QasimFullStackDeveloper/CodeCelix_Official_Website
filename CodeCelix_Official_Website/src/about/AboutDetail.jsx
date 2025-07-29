@@ -11,7 +11,7 @@ export default function AboutDetail() {
       <AboutHero />
       <OurStory />
       <CoreValues />
-      <CompanyTimeline />
+      {/* <CompanyTimeline /> */}
       <TeamSection />
       <ContactSectionCommon />
     </>
