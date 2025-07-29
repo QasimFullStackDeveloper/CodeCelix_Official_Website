@@ -5,7 +5,9 @@ export default function OurStory() {
     <section className="py-20 bg-white font-inter">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">Our Story</h2>
+          <h2 className="text-4xl font-bold font-poppins text-gray-900 mb-6">
+            Our Story
+          </h2>
           <div className="w-24 h-1 bg-[#922e2e] mx-auto rounded-full"></div>
         </div>
 
@@ -25,12 +27,12 @@ export default function OurStory() {
 
             <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
               <p>
-                Founded in 2019, CODECELIX emerged from a simple yet powerful
+                Founded in 2025, CODECELIX emerged from a simple yet powerful
                 vision: to bridge the gap between innovative technology and
-                practical business solutions. Our founders, Sarah Chen and
-                Michael Rodriguez, recognized the need for a technology partner
-                that could truly understand business challenges and deliver
-                transformative results.
+                practical business solutions. Our founder Usman Qureshi,
+                recognized the need for a technology partner that could truly
+                understand business challenges and deliver transformative
+                results.
               </p>
 
               <p>

@@ -157,12 +157,6 @@ const ProjectShowcase = () => {
             </div>
           ))}
         </div>
-
-        <div className="text-center mt-12">
-          {/* <button className="font-dmSans border-2 border-[#922e2e] text-[#922e2e] px-8 py-4 rounded-full hover:bg-[#922e2e] hover:text-white transition-colors font-semibold text-lg whitespace-nowrap cursor-pointer">
-            Load More Projects
-          </button> */}
-        </div>
       </div>
     </section>
   );

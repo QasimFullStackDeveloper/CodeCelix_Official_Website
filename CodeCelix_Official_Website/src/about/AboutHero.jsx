@@ -1,4 +1,4 @@
-import HeroSectionImg from '/About_Image/HeroSectionSideImg.jpg';;
+import HeroSectionImg from '/About_Image/HeroSectionSideImg.jpg';
 
 export default function AboutHero() {
   return (
@@ -40,10 +40,10 @@ export default function AboutHero() {
                 </div>
                 <div className="text-gray-600 text-sm">Team Members</div>
               </div>
-              <div className="text-center">
+              {/* <div className="text-center">
                 <div className="text-4xl font-bold text-[#922e2e] mb-2">5</div>
                 <div className="text-gray-600 text-sm">Years Experience</div>
-              </div>
+              </div> */}
             </div>
           </div>
 

@@ -10,7 +10,7 @@ const ServicesDetail = () => {
     {
       icon: 'ri-award-line',
       title: 'Industry Expertise',
-      description: '10+ years of proven experience across various industries',
+      description: 'Years of proven experience across various industries',
     },
     {
       icon: 'ri-team-line',
